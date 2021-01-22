@@ -216,3 +216,145 @@ section{
         padding: 0 50px;
     }
 }
+
+
+/*skills*/
+
+.card {
+    display: flex;
+    background: linear-gradient(
+      to left top,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.5)
+    );
+    border-radius: 1rem;
+    margin: 2rem 0rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    justify-content: space-between;
+  }
+  .progress {
+    background: linear-gradient(to right top, black,black);
+    width: 400%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .progress::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 60%;
+  }
+  .progress2 {
+    background: linear-gradient(to right top, black,black);
+    width: 400%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .progress2::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 50%;
+  }
+  .progress3 {
+    background: linear-gradient(to right top, black, black);
+    width: 600%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .progress3::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 30%;
+  }
+
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .percentage {
+    font-weight: bold;
+    background: linear-gradient(to right top, black,black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+  }
+
+ 
+  b{
+    margin: 0 20px;
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 24px;
+    box-shadow: 6px 6px 12px rgba(0,0,0,.15),
+                -6px -6px 12px rgba(255,255,255,.1);
+    overflow: hidden;
+    font-size: 28px;
+    transition: .3s linear;
+    position: relative;
+    align-items: center;
+    justify-content:center;
+    left:32%;
+    
+  }
+  
+  b:hover{
+    transform: scale(1.3);
+    border-radius: 50%;
+  }
+  
+  b i::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-size: 200% 200%;
+    background-position: 75% 75%;
+    top: 0;
+    left: 0;
+    line-height: 80px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background .5s linear;
+  }
+  
+  b:hover i::before{
+    background-position: 0% 0%;
+  }
+  
+  .fa-facebook-f::before{
+    background-image: linear-gradient(135deg,#0545cf 30%,#0a3d62 50%);
+  }
+  
+  
+  .fa-instagram::before{
+    background-image: linear-gradient(135deg,rgb(194, 31, 167) 30%,#0a3d62 50%);
+  }
+
+  .fa-inbox::before{
+      background-image :linear-gradient(135deg, red 30%, #0a3d62 50%)
+  }
+ 
