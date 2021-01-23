@@ -219,7 +219,26 @@ section{
 
 
 /*skills*/
+.skills{
+    background-color: #95c9ee;
+}
+.p2{
+    font-family: 'Permanent Marker' , cursive;
+    font-size: 50px;
+}
+.p1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 40px;
+}
 
+.p3{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+}
+.percentage{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+}
 .card {
     display: flex;
     background: linear-gradient(
@@ -301,8 +320,10 @@ section{
     color: black;
   }
 
- 
-  b{
+ .contact{
+     background-color: floralwhite;
+ }
+  .cc a{
     margin: 0 20px;
     width: 80px;
     height: 80px;
@@ -317,16 +338,16 @@ section{
     position: relative;
     align-items: center;
     justify-content:center;
-    left:32%;
+    left:35%;
     
   }
   
-  b:hover{
+  .cc a:hover{
     transform: scale(1.3);
     border-radius: 50%;
   }
   
-  b i::before{
+  .cc a i::before{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -341,7 +362,7 @@ section{
     transition: background .5s linear;
   }
   
-  b:hover i::before{
+  .cc a:hover i::before{
     background-position: 0% 0%;
   }
   
@@ -358,3 +379,10 @@ section{
       background-image :linear-gradient(135deg, red 30%, #0a3d62 50%)
   }
  
+  .blank{
+      background-color: floralwhite;
+
+  }
+  .about{
+      background-color: floralwhite;
+  }
